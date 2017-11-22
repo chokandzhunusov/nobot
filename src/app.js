@@ -15,7 +15,6 @@ function parseBlob(response) {
 socket.on('stream', function(data) {
   app.bot_status = 'connected';
 
-  console.log(data);
   if (data.post_params.content) {
     var msg_id = Date.now();
 
@@ -73,4 +72,3 @@ var app = new Vue({
         el.scrollTop = el.scrollHeight;
     }
 });
-
